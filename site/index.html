@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Pipeline Dashboard</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 2rem; }
+        header h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        header .meta { color: var(--text-muted); font-size: 0.9rem; }
+        .badges { margin: 0.5rem 0; }
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0 0.2rem;
+        }
+        .badge.fallback { background: #3b2f1e; color: #fbbf24; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .card .price { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; }
+        .card .change { font-size: 0.85rem; font-weight: 600; }
+        .summary {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #334155;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+        .summary h2 {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Automated AI Pipeline</h1>
+            <div class="meta">
+                Waiting for first pipeline run...<br>
+                The dashboard will populate automatically.
+            </div>
+            <div class="badges"><span class="badge fallback">Rule-Based</span></div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Bitcoin</h3>
+                <div class="price">—</div>
+            </div>
+            <div class="card">
+                <h3>Ethereum</h3>
+                <div class="price">—</div>
+            </div>
+            <div class="card">
+                <h3>Solana</h3>
+                <div class="price">—</div>
+            </div>
+            <div class="card">
+                <h3>Cardano</h3>
+                <div class="price">—</div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>AI Summary</h2>
+            <p>Dashboard will be populated on the first scheduled run.</p>
+        </div>
+
+        <footer>
+            <p>Powered by GitHub Actions &middot; Runs every 4 hours &middot; <a href="status.json">View raw status JSON</a></p>
+        </footer>
+    </div>
+</body>
+</html>

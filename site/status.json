@@ -1,0 +1,1 @@
+{"timestamp": "pending", "status": "pending", "used_llm": false, "data_source": "CoinGecko API", "coins_monitored": ["bitcoin", "ethereum", "solana", "cardano"], "data_ok": false, "summary": "Pipeline has not run yet. Waiting for first scheduled execution.", "history": []}

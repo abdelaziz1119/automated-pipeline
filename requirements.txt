@@ -1,0 +1,9 @@
+# No external dependencies required for the default $0/month mode.
+# run_task.py and monitor.py use only the Python standard library.
+#
+# If you want LLM-enhanced summaries (optional, may incur costs):
+#   openai>=1.0.0
+#
+# The scripts use urllib (stdlib) for all HTTP calls, so no pip
+# dependencies are strictly needed. This file exists so that
+# actions/setup-python's pip cache has a reference.
