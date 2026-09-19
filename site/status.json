@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-19T12:30:02Z",
+  "timestamp": "2026-09-19T18:36:24Z",
   "status": "success",
   "used_llm": false,
   "data_source": "CoinGecko API",
@@ -10,5 +10,5 @@
     "cardano"
   ],
   "data_ok": true,
-  "summary": "Bitcoin: $81,243.00 (\u25b2 4.22% 24h)\nEthereum: $2,642.44 (\u25b2 5.57% 24h)\nSolana: $111.78 (\u25b2 5.84% 24h)\nCardano: $0.23 (\u25b2 5.50% 24h)\n\nOverall market sentiment: bullish (avg 24h change: +5.28%)"
+  "summary": "Bitcoin: $81,412.00 (\u25b2 0.53% 24h)\nEthereum: $2,638.21 (\u25b2 0.79% 24h)\nSolana: $110.94 (\u25bc 1.61% 24h)\nCardano: $0.23 (\u25b2 3.45% 24h)\n\nOverall market sentiment: bullish (avg 24h change: +0.79%)"
 }
